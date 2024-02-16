@@ -33,7 +33,7 @@ const displayImages = (images) => {
 
 // Event listener for button click
 btn.addEventListener('click', () => {
-  downloadImages(imageUrls)
+  downloadImages(images)
     .then((images) => displayImages(images))
     .catch((error) => console.error(error.message));
 });
